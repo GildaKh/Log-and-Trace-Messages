@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<category-rule-set>
+  <category-ref-whitelist>
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="AlignmentTools" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="AlignmentTools" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="EDI-EDA" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="EDI-EDA" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="FocusTools" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="FocusTools" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="GenericUI" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="GenericUI" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="IDMTools" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="IDMTools" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="LotOperationsManager" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="LotOperationsManager" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="OverlayTools" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="OverlayTools" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="SECS" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="SECS" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="Startup-maintenance" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="Startup-maintenance" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB" source="WaferLayoutEditor" target="MachineConfiguration" />
+    <allow-category-ref source-pattern="BB" target-pattern="BB;Exposed" source="WaferLayoutEditor" target="SoftwareLayout;Int5,version=2" interim="Deprecate: We don't want this" interim-level="warning" />
+  </category-ref-whitelist>
+</category-rule-set>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+
+   <UsingTask AssemblyFile="C:\Users\gkhosrav\source\repos\DependencyManagementLanguage\DLL\MsBuildTask.dll" TaskName="MsBuildTask.GrayDepTask" />
+	
+   <Target Name="Build" >  
+	<GrayDepTask  GrayDepConfig ="C:\Users\gkhosrav\source\repos\YieldStar-Sample\Scopes\config\configuration.dmconfig"/> 
+	</Target>
+</Project>
