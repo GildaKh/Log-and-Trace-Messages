@@ -19,7 +19,7 @@ namespace Analyzer.Config
 
         public ReceivedMessageAnalyzer(string content, LogHandler messageHandler)
         {
-            _content = string.IsNullOrEmpty(content) ? throw new ArgumentNullException(nameof(content)) : content;
+            _content = string.IsNullOrEmpty(content) ? throw new ArgumentNullException(nameof(content)) : content; 
             MessageHandler = messageHandler;
         }
         public IEnumerable<MessageBase> GetMessages(Func<IEnumerable<string>> receivedValues, string successCriteria)
