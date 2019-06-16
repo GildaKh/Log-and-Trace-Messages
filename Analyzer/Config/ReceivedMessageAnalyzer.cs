@@ -31,7 +31,7 @@ namespace Analyzer.Config
             {
                 if (message.Any(char.IsDigit))
                 {
-                    yield return new TraceConfigErrorMessage("dummy description", "dummyFileName", 2);
+                    yield return new araceConfigErrorMessage("dummy description", "dummyFileName", 2);
                     break;
                 }
                 else
