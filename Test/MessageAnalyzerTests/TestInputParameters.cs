@@ -36,8 +36,8 @@ namespace Test.MessageAnalyzerTests
             IReceivedMessageAnalyzer analyzer = new ReceivedMessageAnalyzer("var x = 10", null);
             var messages = analyzer.GetMessages(DummyMessage.GenerateDummyMessageOneString, "y = 10").ToList();
 
-            List<InfoMessage> expected = new List<InfoMessage>();
-            expected.Add(new InfoMessage("dummy description : var x = 10 ", 1));
+            List<TraceInfoMessage> expected = new List<TraceInfoMessage>();
+            expected.Add(new TraceInfoMessage("dummy description : var x = 10 ", 1));
 
             Assert.AreEqual(1, messages.Count(), "When both side consists of same number of messages");
             Assert.AreEqual(expected[0], messages[0], "When first messages are equal in info messages");

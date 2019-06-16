@@ -10,10 +10,10 @@ namespace MessageGenerator.MessageType
     /// <summary>
     /// A message indicating that parameter in scope is not defined.
     /// </summary>
-    public sealed class ScopeErrorMessage : ErrorMessageBase
+    public sealed class TraceScopeErrorMessage : TraceErrorMessageBase
     {
         private string _paramName;
-        public ScopeErrorMessage(string description, string paramName) : base(description)
+        public TraceScopeErrorMessage(string description, string paramName) : base(description)
         {
             _paramName = paramName;
         }

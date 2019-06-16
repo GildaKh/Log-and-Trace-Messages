@@ -10,12 +10,12 @@ namespace MessageGenerator.MessageType
     /// <summary>
     /// A message indicating that config file parsing encountered a problem.
     /// </summary>
-    public sealed class ConfigErrorMessage : ErrorMessageBase
+    public sealed class TraceConfigErrorMessage : TraceErrorMessageBase
     {
         private string _fileName;
         private int _line;
         private string errorText;
-        public ConfigErrorMessage(string description, string fileName, int line) : base(description)
+        public TraceConfigErrorMessage(string description, string fileName, int line) : base(description)
         {
             _fileName = fileName;
             _line = line;

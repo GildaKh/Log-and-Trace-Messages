@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Analyzer.Config
 {
     /// <summary>
-    /// Recieves all the violations in the config and generates message respectively.
+    /// Recieves all the violations and generates message respectively.
     /// </summary>
     public class ReceivedMessageAnalyzer: IReceivedMessageAnalyzer
     {
@@ -22,20 +22,20 @@ namespace Analyzer.Config
             _content = string.IsNullOrEmpty(content) ? throw new ArgumentNullException(nameof(content)) : content; 
             MessageHandler = messageHandler;
         }
-        public IEnumerable<MessageBase> GetMessages(Func<IEnumerable<string>> receivedValues, string successCriteria)
+        public IEnumerable<TraceMessageBase> GetMessages(Func<IEnumerable<string>> receivedValues, string successCriteria)
         {
             if (successCriteria == "dummy check")
-                yield return new ScopeErrorMessage("Success Criteria is ignored", "successCriteria");
+                yield return new TraceScopeErrorMessage("Success Criteria is ignored", "successCriteria");
 
             foreach (var message in receivedValues())
             {
                 if (message.Any(char.IsDigit))
                 {
-                    yield return new ConfigErrorMessage("dummy description", "dummyFileName", 2);
+                    yield return new TraceConfigErrorMessage("dummy description", "dummyFileName", 2);
                     break;
                 }
                 else
-                    yield return new InfoMessage($"dummy description : {_content} ", 1);
+                    yield return new TraceInfoMessage($"dummy description : {_content} ", 1);
             }
             LogTraceMessage("All the messages are added");
         }

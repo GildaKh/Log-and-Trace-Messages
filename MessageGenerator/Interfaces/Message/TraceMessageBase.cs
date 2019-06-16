@@ -9,10 +9,10 @@ namespace MessageGenerator.Interfaces.Message
     /// <summary>
     /// A message base for all the message types.
     /// </summary>
-    public abstract class MessageBase
+    public abstract class TraceMessageBase
     {
         protected readonly string Description;
-        public MessageBase(string _desc)
+        public TraceMessageBase(string _desc)
         {
             Description = _desc;
         }

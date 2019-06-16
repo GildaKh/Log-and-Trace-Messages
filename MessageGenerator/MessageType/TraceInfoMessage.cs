@@ -10,17 +10,17 @@ namespace MessageGenerator.MessageType
     /// <summary>
     /// A message indicating information.
     /// </summary>
-    public sealed class InfoMessage: MessageBase
+    public sealed class TraceInfoMessage: TraceMessageBase
     {
         private int _code;
-        public InfoMessage(string description, int code) : base(description)
+        public TraceInfoMessage(string description, int code) : base(description)
         {
             _code = code;
         }
 
         public override string ToString() => $"DependecyManager Info: \"{Description}\" for code: {_code}";
 
-        public bool Equals(InfoMessage other)
+        public bool Equals(TraceInfoMessage other)
         {
             if (object.ReferenceEquals(other, null))
             {
@@ -32,9 +32,9 @@ namespace MessageGenerator.MessageType
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj)) return false;
-            return obj is InfoMessage && Equals((InfoMessage)obj);
+            return obj is TraceInfoMessage && Equals((TraceInfoMessage)obj);
         }
-        public static bool operator ==(InfoMessage left, InfoMessage right)
+        public static bool operator ==(TraceInfoMessage left, TraceInfoMessage right)
         {
             if (object.ReferenceEquals(left, null))
             {
@@ -42,7 +42,7 @@ namespace MessageGenerator.MessageType
             }
             return left.Equals(right);
         }
-        public static bool operator !=(InfoMessage left, InfoMessage right)
+        public static bool operator !=(TraceInfoMessage left, TraceInfoMessage right)
         {
             return !left.Equals(right);
         }

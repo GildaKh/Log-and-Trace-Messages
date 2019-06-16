@@ -10,9 +10,9 @@ namespace MessageGenerator.MessageType
     /// <summary>
     /// A message indicating a warning.
     /// </summary>
-    public sealed class WarningMessage: MessageBase
+    public sealed class TraceWarningMessage: TraceMessageBase
     {
-        public WarningMessage(string description) : base(description)
+        public TraceWarningMessage(string description) : base(description)
         {
         }
 

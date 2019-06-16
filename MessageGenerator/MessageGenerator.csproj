@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\Message\ErrorMessageBase.cs" />
-    <Compile Include="Interfaces\Message\MessageBase.cs" />
-    <Compile Include="MessageType\ConfigErrorMessage.cs" />
-    <Compile Include="MessageType\ScopeErrorMessage.cs" />
-    <Compile Include="MessageType\InfoMessage.cs" />
+    <Compile Include="Interfaces\Message\TraceErrorMessageBase.cs" />
+    <Compile Include="Interfaces\Message\TraceMessageBase.cs" />
+    <Compile Include="MessageType\TraceConfigErrorMessage.cs" />
+    <Compile Include="MessageType\TraceScopeErrorMessage.cs" />
+    <Compile Include="MessageType\TraceInfoMessage.cs" />
     <Compile Include="Interfaces\Message\LogHandler.cs" />
-    <Compile Include="MessageType\WarningMessage.cs" />
+    <Compile Include="MessageType\TraceWarningMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

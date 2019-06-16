@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace Analyzer.Interfaces
 {
+    /// <summary>
+    /// An Interface that Recieves all the violations and generates message respectively.
+    /// </summary>
     public interface IReceivedMessageAnalyzer
     {
-         IEnumerable<MessageBase> GetMessages(Func<IEnumerable<string>> receivedValues, string successCriteria);
+         IEnumerable<TraceMessageBase> GetMessages(Func<IEnumerable<string>> receivedValues, string successCriteria);
     }
 }

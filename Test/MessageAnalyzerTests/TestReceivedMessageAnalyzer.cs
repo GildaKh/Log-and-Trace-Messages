@@ -22,9 +22,9 @@ namespace Test.MessageAnalyzerTests
             IReceivedMessageAnalyzer analyzer = new ReceivedMessageAnalyzer("var x = 10", LogMessage);
             var messages = analyzer.GetMessages(DummyMessage.GenerateDummyMessagesAllString, "y = 10").ToList();
 
-            List<InfoMessage> expected = new List<InfoMessage>();
-            expected.Add(new InfoMessage("dummy description : var x = 10 ", 1));
-            expected.Add(new InfoMessage("dummy description : var x = 10 ", 1));
+            List<TraceInfoMessage> expected = new List<TraceInfoMessage>();
+            expected.Add(new TraceInfoMessage("dummy description : var x = 10 ", 1));
+            expected.Add(new TraceInfoMessage("dummy description : var x = 10 ", 1));
           
 
             Assert.AreEqual(expected.Count(), messages.Count(), "When both side consists of same number of messages");

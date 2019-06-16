@@ -9,14 +9,14 @@ namespace MessageGenerator.Interfaces.Message
     /// <summary>
     /// A message base for messages lead to error.
     /// </summary>
-    public abstract class ErrorMessageBase : MessageBase
+    public abstract class TraceErrorMessageBase : TraceMessageBase
     {
         public abstract Exception Exception { get; }
 
         public virtual string Message => Exception.Message;
         public virtual string Source => Exception.Source;
 
-        public ErrorMessageBase(string description) : base(description)
+        public TraceErrorMessageBase(string description) : base(description)
         {
         }
 
