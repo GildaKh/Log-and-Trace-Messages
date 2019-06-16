@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\Message\TraceErrorMessageBase.cs" />
     <Compile Include="Interfaces\Message\TraceMessageBase.cs" />
-    <Compile Include="MessageType\araceConfigErrorMessage.cs" />
+    <Compile Include="MessageType\TraceConfigErrorMessage.cs" />
     <Compile Include="MessageType\TraceScopeErrorMessage.cs" />
     <Compile Include="MessageType\TraceInfoMessage.cs" />
     <Compile Include="Interfaces\Message\LogHandler.cs" />
